@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(0, 167, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-container{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.headline-wrapper{
+    background-color: rgb(0, 148, 0);
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headline-wrapper h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    max-width: 80vw;
+}
+
+.pictures-section{
+    width: 90vw;
+    border-radius: 10px;
+    background-color: rgb(0, 133, 0);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    padding: 15px;
+
+}
+
+.pictures-section img{
+    width: 16vw;
+    border-radius: 9px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.modal-section{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-wrapper{
+    border: solid white 10px;
+    border-radius: 10px;
+    display: flex;
+    height: 90vh;
+    position: relative;
+    width: 90vw;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.modal-header{
+    height: 20px;
+    background-color: white;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.modal-header i {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.6,1.6);
+    justify-self: flex-end;
+}
+/*Funkar ej*/
+#cross :hover{
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+#mainImg{
+    height: 97%;
+    object-fit: contain;
+}
+
+#arrow-left, #arrow-right{
+    position: absolute;
+    color: white;
+    top: 50%;  
+    margin: 10px;
+    transform: scale(1.9,1.9);
+    cursor: pointer;
+}
+
+#arrow-right{
+    right: 0px;
+}
